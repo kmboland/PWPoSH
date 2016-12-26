@@ -1,13 +1,16 @@
+# Demo practice script to test ProjectWise and PowerShell. 
+# Author: Kevin Boland
+# Version 1 
 #-------------------------------------#
-  #           Configuration             #
-  #-------------------------------------#    
+#           Configuration             #
+#-------------------------------------#    
     # Change these values to suit your datasource
     $datasource = 'FQDN:Datasource';
     $username = 'putPWAdminhere';
     $password = 'putpassword here';
-  #-------------------------------------#
-  #          END Configuration          #
-  #-------------------------------------#
+#-------------------------------------#
+#          END Configuration          #
+#-------------------------------------#
  
     # Stop this script if there are any errors
     $ErrorActionPreference = 'Stop'
@@ -27,6 +30,8 @@
     Open-PWConnection -Admin -DatasourceName $datasource -UserName $username -Password $password
  
     # Output a list of connected Users  
+    #This is the sample, one liners. Uncomment each line below and run it in PowerShell ISE to see results. 
+    
     #Get-PWDatasource  
     #Get-pwuser
     #Get-PWUser -EMail "*J*@ben?ley.com"
