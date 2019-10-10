@@ -14,4 +14,4 @@ $outputFileName = 'c:\report\%CompanyName%stats.xlsx'
 $customerName = "%CompanyName%,PerfTest1"
 
 New-PWLogin -DatasourceName $pwDatasourceName -UserName $pwAdminUserName -Password $pwAdminUserSecPassword
-New-PWInputOutputPerformanceReport -OutputFileName $outputFileName -FileSizeK 100 -NumberOfFiles 10 -CollectExpensiveStatistics -CustomerName $customerName 
+New-PWInputOutputPerformanceReport -OutputFileName $outputFileName -FileSizeK 100 -NumberOfFiles 10 -CustomerName $customerName 
